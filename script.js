@@ -1,3 +1,3 @@
-function add(){
-    console.log("Sohag");
+function hello(){
+    console.log("Hello World");
 }
