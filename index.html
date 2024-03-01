@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple-Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Welcome to simple form</h1>
+      <a href="">Home</a>
+      <a href="">Profile</a>
+      <a href="">About</a>
+      <a href="">Conntacts</a>
+    </header>
+    <br /><br />
+    <form action="index.php" method="post">
+      <label for="username"> Username:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter username"
+      /><br /><br />
+
+      <label for="username"> Password:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter username"
+      /><br /><br />
+      <label for="phone">Phone No:</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      />
+      <br /><br />
+      <label for="title">Tittle:</label>
+      <input type="radio" id="Mr" value="Mr" name="title" />
+      <label for="Mr">Mr</label>
+      <input type="radio" id="Mrs" value="Mrs" name="title" />
+      <label for="Mrs">Mrs</label>
+      <input type="radio" id="PhD" name="title" name="title" />
+      <label for="PhD">PhD</label>
+      <br /><br />
+      <label for="payment">Payment</label>
+      <select>
+        <option value="visa">Visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="ATM">ATM</option>
+      </select>
+      <br />
+      <br />
+      <label for="subscribe">Subscribed</label>
+      <input type="checkbox" id="subscribe" /><br /><br />
+      <label for="comment">Comment</label>
+      <textarea id="comment" cols="30" rows="3"></textarea><br /><br />
+
+      <input type="submit" />
+      <input type="Reset" />
+    </form>
+    <div class="pagination">
+      <a href=""><</a>
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+      <a href="">></a>
+    </div>
+
+    <!-- <button id="button">Submit</button> -->
+  </body>
+</html>
