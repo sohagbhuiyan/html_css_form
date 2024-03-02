@@ -1,5 +1,4 @@
-
-h1{
+h1 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -14,11 +13,24 @@ body {
   );
 }
 
+.pagination {
+  text-align: center;
+}
 .pagination a {
   margin-top: 20px;
-  text-decoration: dotted;
+  text-decoration: none;
   color: black;
-  padding: 10px 20px;
+  padding: 10px 15px;
   display: inline-block;
-  
+}
+.pagination a.active {
+  background-color: rgb(71, 248, 71);
+  font-weight: bold;
+  border-radius: 5px;
+}
+.pagination a:hover {
+  background-color: rgb(174, 177, 180);
+  border-radius: 5px;
+}
+.pagination a.active {
 }
